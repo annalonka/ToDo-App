@@ -1,0 +1,66 @@
+/*Font for smaller text*/
+@font-face {
+  font-family: 'JackStory';
+  src: url('./fonts/CFJackStory-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Hazel';
+  src: url('./fonts/HazelDecoLight-Regular.ttf');
+}
+
+
+@font-face {
+  font-family: 'Awesome';
+  src: url('./fonts/Awesome Birds.ttf');
+}
+
+.nav-button {
+  border-color: #1C00ff00;
+  font-size: 1.25em;
+}
+
+.printbutton {
+  border-color: #1C00ff00;
+}
+
+.printbutton:hover, .nav-button:hover {
+  background-color: #1C00ff00;
+  border-color: #1C00ff00;
+  color: inherit;
+}
+
+h1{
+  font-family: 'Awesome';
+  font-size: 6em;
+  text-align: center;
+  /*border-bottom: 2px dotted;*/
+}
+
+.navigation {
+  font-family: 'JackStory';
+  width: 100vw;
+  letter-spacing: 0.05em;
+  display:inline-block;
+  text-align: center;
+}
+
+.fading-line {
+    display:block;
+    border:none;
+    height:1px;
+    background:black;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#000), to(#e0f4f2));
+}
+
+#upper-line{
+  margin-top: 1em;
+}
+
+#bottom-line{
+  margin-bottom: 1.5em;
+}
+
+.header-nav {
+  margin-bottom: 1em;
+}
