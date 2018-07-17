@@ -7,13 +7,6 @@ class Week extends Component {
   render() {
     return (
       <div className="this-week">
-        <ToDoList />
-        <ToDoList />
-        <ToDoList />
-        <ToDoList />
-        <ToDoList />
-        <ToDoList />
-        <ToDoList />
       </div>
     )
   }
