@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
 import {Form, Button} from 'reactstrap';
 import ToDoItems from './ToDoItems'
-import './css/ToDoList.css'
 
 
-class ToDoList extends Component {
+class WeekToDoList extends Component {
 	constructor(props) {
 		super(props)
 
@@ -94,43 +93,21 @@ class ToDoList extends Component {
 		})
 	}
 
-	showDone () {
-		this.setState({
-			todos: this.state.done,
-		})
-	}
-
-	showUndone () {
-		this.setState({
-			todos: this.state.undone,
-		})
-	}
-
-
-	showAll() {
-		this.setState({
-			todos: this.state.all,
-		})
-	}
-
 
 	render () {
 		return (
-			<div className="todoInput">
+			<div className="todoInputt">
 				<div>
-					<Form className="input-and-button" onSubmit={this.addToDo}>
+					<Form className="input-and-buttonn" onSubmit={this.addToDo}>
 						<input
 							className="input"
 							ref={(a) => this._inputElement = a}
 							placeholder="Add a new task here...">
 						</input>
-						<Button outline id="addButton" type="submit">
+						<Button outline className="addButton" id="add-button" type="submit">
 							<span className="fa fa-plus-circle" aria-hidden="true" />
 						</Button>
 					</Form>
-					<Button outline className="show-button " onClick={() => this.showAll()}>All</Button>
-					<Button outline className="show-button" onClick={() => this.showDone()}>Done</Button>
-					<Button outline className="show-button" onClick={() => this.showUndone()}>Undone</Button>
 				</div>
 				<ToDoItems
 					entries={this.state.todos}
@@ -142,4 +119,4 @@ class ToDoList extends Component {
 		)
 	}
 }
-export default ToDoList;
+export default WeekToDoList;

@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-import './week.css';
-import ToDoList from './ToDoList'
+import './css/week.css';
+import WeekToDoList from './weekToDoList'
+
 
 class Week extends Component {
 
   render() {
     return (
       <div className="this-week">
+        
       </div>
     )
   }

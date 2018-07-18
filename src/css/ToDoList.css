@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'JackStory';
+  src: url('../fonts/CFJackStory-Regular.ttf');
+}
+
+#addButton {
+  border: none;
+  font-size: 1.5em;
+  background-color: #1C00ff00;
+  color: #2e3747;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+
+#addButton:hover {
+  background-color: #1C00ff00;
+  color: #586a89;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+/*Changes different things for the whole input, buttons
+  and items area*/
+.todoInput {
+  margin: 1.75em;
+  margin-top: 0px;
+  font-family: 'JackStory';
+  color: #586a89;
+  letter-spacing: 0.05em;
+  background-color: #fdfffc;
+  border-color: #fbcece;
+  border-style: double;
+  border-width: 6px;
+  width: 95vw;
+  display: inline-block;
+  align-items: center;
+  align-content: center;
+}
+
+/*Changes the font and letterspacing of the input
+  placeholders*/
+.placeholder {
+  font-family: 'JackStory';
+  letter-spacing: 0.05em;
+}
+/*Displays input and plus button inline*/
+.input-and-button {
+  display: inline-block;
+  box-shadow: none;
+  margin-left: 1em;
+}
+
+/*Adds margin and */
+.show-button {
+  margin-left: 0.5em;
+  color: #2e3747;
+}
+
+.show-button:hover{
+  background-color: #2e3747;
+}

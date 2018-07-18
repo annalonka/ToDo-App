@@ -1,0 +1,12 @@
+body {
+  background-image: url('../images/OP3W7J0.jpg');
+  background-size:cover;
+}
+
+.header {
+  height: 30vh;
+}
+
+.credit {
+  visibility: hidden;
+}

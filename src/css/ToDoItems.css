@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'JackStory';
+  src: url('../fonts/CFJackStory-Regular.ttf');
+}
+
+
+.delete-button, .edit-button {
+  vertical-align: middle;
+  border-color: #1C00ff00;
+  font-size: 1.5em;
+  margin: 0px;
+  float: right;
+  color: #2e3747;
+}
+
+.delete-button:hover, .edit-button:hover {
+  background-color: #1C00ff00;
+  border-color: #1C00ff00;
+  color: #586a89;
+}
+
+/*Edits the listed items within the line*/
+.todoItems {
+  display: inline-block;
+  margin: 2px;
+  border: 0px;
+  border-bottom: 0.5px;
+  border-style:ridge;
+  list-style-type: none;
+  height: 3em;
+  color:#2e3747;
+}
+/*Edits one item in the todo-list*/
+.todoItem, .doneItem {
+  margin-top: 1em;
+  display: inline-block;
+  margin-left: 0.5em;
+  font-family: 'JackStory';
+  letter-spacing: 0.1em;
+}
+
+/*Changes the appearance of an item that
+  is marked done*/
+.doneItem {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.checkbox, .invisible-checkbox {
+  margin-left: 1em;
+  width: 3px;
+  height: 3px;
+}
+
+
+/*Makes the checkbox invisible when the item
+  is marked done*/
+.invisible-checkbox {
+  visibility: hidden;
+}
+
+/*Moves the edit-input to the leftside
+  of the list */
+.edited-input {
+  float: left;
+  margin-top: 0.5em;
+  margin-left: 0.9em;
+}
+
+#done-editing {
+  float: left;
+}

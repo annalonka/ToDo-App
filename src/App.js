@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import './App.css';
+import './css/App.css';
 import Header from './header';
-import './header.css'
 import Today from './today';
 import Week from './week'
 
