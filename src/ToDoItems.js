@@ -17,6 +17,7 @@ class ToDoItems extends Component {
   done(key) {
     this.props.done(key)
   }
+  
   /*Changes the state of the selected item to edit: true*/
   edit(key) {
     this.props.edit(key)
@@ -35,13 +36,16 @@ class ToDoItems extends Component {
         {item.edit === false ? (
           <div>
             <li className={item.done === false ? "todoItem" : "doneItem"} key={item.key}>{item.text}</li>
-              <button  title="Done" className={item.done === false ? "checkbox" : "invisible-checkbox"} onClick={() => this.done(item.key)}>
-              </button>
-              <Button id="delete-button" outline className="delete-button" title="Delete" onClick={() => this.delete(item.key)}>
-                <span className="fa fa-minus-circle" aria-hidden="true" />
-              </Button>
+            <Button outline title="Done" className="checkbox" onClick={() => this.done(item.key)}>
+              {item.done === true &&
+                <span id="done" className="fa fa-check" aria-hidden="true" />
+              }
+            </Button>
+            <Button id="delete-button" outline className="delete-edit" title="Delete" onClick={() => this.delete(item.key)}>
+              <span className="fa fa-times" aria-hidden="true" />
+            </Button>
             {item.done === false &&
-              <Button id="edit-button" outline className="edit-button" title="Edit" onClick={() => this.edit(item.key)} >
+              <Button id="edit-button" outline className="delete-edit" title="Edit" onClick={() => this.edit(item.key)} >
                 {item.edit === false ? (
                   <span className="fa fa-pencil" aria-hidden="true" />
                 ) : (
@@ -57,8 +61,11 @@ class ToDoItems extends Component {
               placeholder={item.text}
               ref={(a) => this._inputElement = a}>
             </input>
-            <Button id="done-editing" outline title="Save" className="edit-button" onClick={() => this.edited(item)} >
+            <Button id="done-editing" outline title="Save" className="delete-edit" onClick={() => this.edited(item)} >
                 <span className="fa fa-check" aria-hidden="true" />
+            </Button>
+            <Button id="cancel-editing" outline title="Save" className="delete-edit" onClick={() => this.edit(item.key)} >
+                <span className="fa fa-times" aria-hidden="true" />
             </Button>
             </div>
           )}

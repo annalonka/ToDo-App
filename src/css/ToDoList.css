@@ -3,21 +3,18 @@
   src: url('../fonts/CFJackStory-Regular.ttf');
 }
 
-#addButton {
+.addButton {
   border: none;
   font-size: 1.5em;
   background-color: #1C00ff00;
   color: #2e3747;
-  box-shadow: none;
-  -webkit-box-shadow: none;
+  box-shadow: none !important;
 }
 
 
-#addButton:hover {
-  background-color: #1C00ff00;
-  color: #586a89;
-  box-shadow: none;
-  -webkit-box-shadow: none;
+.addButton:hover {
+  background-color: #1C00ff00 !important;
+  color: #586a89 !important;
 }
 
 /*Changes different things for the whole input, buttons
@@ -55,8 +52,13 @@
 .show-button {
   margin-left: 0.5em;
   color: #2e3747;
+  box-shadow: none !important;
 }
 
 .show-button:hover{
   background-color: #2e3747;
+}
+
+.input{
+  width: 20vw;
 }

@@ -74,7 +74,12 @@ class ToDoList extends Component {
 			this.state.all.find(n => n.key === key).done = true
 			var done = all.filter(n => n.done === true)
 			var undone = all.filter(n => n.done === false)
+		}else{
+			this.state.all.find(n => n.key === key).done = false
+			done = all.filter(n => n.done === true)
+			undone = all.filter(n => n.done === false)
 		}
+		all.sort(n=> n.done === true)
 		this.setState({
 			todos: this.state.todos,
 			done: done,
@@ -124,7 +129,7 @@ class ToDoList extends Component {
 							ref={(a) => this._inputElement = a}
 							placeholder="Add a new task here...">
 						</input>
-						<Button outline id="addButton" type="submit">
+						<Button outline className="addButton" type="submit">
 							<span className="fa fa-plus-circle" aria-hidden="true" />
 						</Button>
 					</Form>

@@ -19,17 +19,21 @@
   border-color: #1C00ff00;
   font-size: 1.25em;
   color: #2e3747;
+  visibility: hidden;
 }
 
 .printbutton {
   border-color: #1C00ff00;
   color: #2e3747;
+  float:right;
+  margin-right: 1em;
+  box-shadow: none !important;
 }
 
 .printbutton:hover, .nav-button:hover {
-  background-color: #1C00ff00;
-  border-color: #1C00ff00;
-  color: #586a89;
+  background-color: #1C00ff00 !important;
+  border-color: #1C00ff00 !important;
+  color: #586a89 !important;
 }
 
 h1{
@@ -55,10 +59,4 @@ h1{
     height:1px;
     background:black;
     background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#2e3747), to(#1C00ff00));
-}
-
-
-
-#bottom-line {
-
 }

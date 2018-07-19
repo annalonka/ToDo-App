@@ -19,9 +19,9 @@ class Header extends Component {
   render() {
     return (
       <div className="header-nav">
-        <span className="fading-line" id="upper-line"></span>
+        <span className="fading-line"></span>
         <h1>(Things To Do)</h1>
-        <span className="fading-line" id="bottom-line"></span>
+        <span className="fading-line"></span>
         <div className="navigation">
           <Button outline className="nav-button" onClick={() => this.today()}>... today</Button>
           <Button outline className="nav-button" onClick={() => this.thisWeek()}>... this week</Button>
