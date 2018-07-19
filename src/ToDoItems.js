@@ -17,7 +17,7 @@ class ToDoItems extends Component {
   done(key) {
     this.props.done(key)
   }
-  
+
   /*Changes the state of the selected item to edit: true*/
   edit(key) {
     this.props.edit(key)
@@ -41,11 +41,11 @@ class ToDoItems extends Component {
                 <span id="done" className="fa fa-check" aria-hidden="true" />
               }
             </Button>
-            <Button id="delete-button" outline className="delete-edit" title="Delete" onClick={() => this.delete(item.key)}>
+            <Button id="delete-button" outline className="delete-edit no-print" title="Delete" onClick={() => this.delete(item.key)}>
               <span className="fa fa-times" aria-hidden="true" />
             </Button>
             {item.done === false &&
-              <Button id="edit-button" outline className="delete-edit" title="Edit" onClick={() => this.edit(item.key)} >
+              <Button id="edit-button" outline className="delete-edit no-print" title="Edit" onClick={() => this.edit(item.key)} >
                 {item.edit === false ? (
                   <span className="fa fa-pencil" aria-hidden="true" />
                 ) : (

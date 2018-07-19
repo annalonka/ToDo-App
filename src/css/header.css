@@ -15,19 +15,13 @@
   src: url('../fonts/Awesome Birds.ttf');
 }
 
-.nav-button {
-  border-color: #1C00ff00;
-  font-size: 1.25em;
-  color: #2e3747;
-  visibility: hidden;
-}
-
 .printbutton {
   border-color: #1C00ff00;
   color: #2e3747;
   float:right;
-  margin-right: 1em;
+  margin-right: 1.5em;
   box-shadow: none !important;
+  font-size: 1.5em;
 }
 
 .printbutton:hover, .nav-button:hover {

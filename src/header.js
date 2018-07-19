@@ -3,14 +3,6 @@ import { Button} from 'reactstrap';
 import './css/header.css'
 
 class Header extends Component {
-  today() {
-    this.props.today()
-  }
-
-  thisWeek(){
-    this.props.thisWeek()
-  }
-
   print() {
     window.print();
   }
@@ -23,9 +15,7 @@ class Header extends Component {
         <h1>(Things To Do)</h1>
         <span className="fading-line"></span>
         <div className="navigation">
-          <Button outline className="nav-button" onClick={() => this.today()}>... today</Button>
-          <Button outline className="nav-button" onClick={() => this.thisWeek()}>... this week</Button>
-          <Button outline className="printbutton" onClick={this.print}>
+          <Button outline className="printbutton no-print" onClick={this.print}>
             <span className="fa fa-print" aria-hidden="true" />
           </Button>
         </div>

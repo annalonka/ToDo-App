@@ -123,7 +123,7 @@ class ToDoList extends Component {
 		return (
 			<div className="todoInput">
 				<div>
-					<Form className="input-and-button" onSubmit={this.addToDo}>
+					<Form className="input-and-button no-print" onSubmit={this.addToDo}>
 						<input
 							className="input"
 							ref={(a) => this._inputElement = a}
@@ -133,9 +133,9 @@ class ToDoList extends Component {
 							<span className="fa fa-plus-circle" aria-hidden="true" />
 						</Button>
 					</Form>
-					<Button outline className="show-button " onClick={() => this.showAll()}>All</Button>
-					<Button outline className="show-button" onClick={() => this.showDone()}>Done</Button>
-					<Button outline className="show-button" onClick={() => this.showUndone()}>Undone</Button>
+					<Button media="print" outline className="show-button no-print" onClick={() => this.showAll()}>All</Button>
+					<Button outline className="show-button no-print" onClick={() => this.showDone()}>Done</Button>
+					<Button outline className="show-button no-print" onClick={() => this.showUndone()}>Undone</Button>
 				</div>
 				<ToDoItems
 					entries={this.state.todos}

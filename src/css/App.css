@@ -10,3 +10,9 @@ body {
 .credit {
   visibility: hidden;
 }
+/*Hides unnecessary elements when printing.*/
+@media print {
+  .no-print, .no-print * {
+    display: none !important;
+  }
+}
